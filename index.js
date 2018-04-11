@@ -1,0 +1,1 @@
+export {default as aggregator} from './src/xassist-aggregator.js'
