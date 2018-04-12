@@ -2,7 +2,7 @@
 * @preserve
 * https://github.com/GregBee2/xassist-aggregator.git Version 0.0.1.
 *  Copyright 2018 Gregory Beirens.
-*  Created on Thu, 12 Apr 2018 11:54:20 GMT.
+*  Created on Thu, 12 Apr 2018 11:58:29 GMT.
 */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -11,8 +11,8 @@
 }(this, (function (exports) { 'use strict';
 
 function XaAggregator(add,remove,initial,get){
-	this.addFn=add||function(currentValue,record){return ++currentValue;};
-	this.removeFn=remove||function(currentValue,record){return --currentValue;};
+	this.addFn=add||function(currentValue){return ++currentValue;};
+	this.removeFn=remove||function(currentValue){return --currentValue;};
 	this.initialFn=initial||function(){return 0;};
 	this.getValue=get||function(){return this.value;};
 	//init value
@@ -118,7 +118,7 @@ function simpleStats(attr){
 	//this can lead to cancellation working with small values (sumSquared almost equals sum*sum/n)
 	//so we use Welfords Method
 	var add,remove;
-	remove=function(c,r){throw new Error("not yet implemented");};
+	remove=function(){throw new Error("not yet implemented");};
 	if(!attr){
 		add=function(c,r){return wellford(c,(+r||0));};
 	}
