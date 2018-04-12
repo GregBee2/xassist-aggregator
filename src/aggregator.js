@@ -2,8 +2,8 @@
 
 
 function XaAggregator(add,remove,initial,get){
-	this.addFn=add||function(currentValue,record){return ++currentValue;};
-	this.removeFn=remove||function(currentValue,record){return --currentValue;};
+	this.addFn=add||function(currentValue){return ++currentValue;};
+	this.removeFn=remove||function(currentValue){return --currentValue;};
 	this.initialFn=initial||function(){return 0;};
 	this.getValue=get||function(){return this.value;};
 	//init value

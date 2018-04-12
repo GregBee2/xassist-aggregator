@@ -30,7 +30,7 @@ export default function simpleStats(attr){
 	//this can lead to cancellation working with small values (sumSquared almost equals sum*sum/n)
 	//so we use Welfords Method
 	var add,remove;
-	remove=function(c,r){throw new Error("not yet implemented");};
+	remove=function(){throw new Error("not yet implemented");};
 	if(!attr){
 		add=function(c,r){return wellford(c,(+r||0));};
 	}
