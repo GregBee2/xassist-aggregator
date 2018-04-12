@@ -2,7 +2,7 @@
 * @preserve
 * https://github.com/GregBee2/xassist-aggregator.git Version 0.0.1.
 *  Copyright 2018 Gregory Beirens.
-*  Created on Thu, 12 Apr 2018 11:58:29 GMT.
+*  Created on Thu, 12 Apr 2018 12:00:08 GMT.
 */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
