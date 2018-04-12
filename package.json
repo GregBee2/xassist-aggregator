@@ -1,6 +1,6 @@
 {
   "name": "@xassist/xassist-aggregator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add aggregatefunctions for arrays to javascript",
   "keywords": [
     "aggregate",
