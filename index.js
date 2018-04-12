@@ -1,1 +1,1 @@
-export {default as aggregator} from './src/xassist-aggregator.js'
+export {default as aggregate} from './src/aggregate.js'
